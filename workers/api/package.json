@@ -1,0 +1,26 @@
+{
+  "name": "tahu-api",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Tahu REST API Worker",
+  "main": "./src/index.ts",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate:local": "wrangler d1 execute tahu-db --local --file=./migrations/0001_init.sql",
+    "db:migrate:remote": "wrangler d1 execute tahu-db --remote --file=./migrations/0001_init.sql"
+  },
+  "dependencies": {
+    "@tahu/api": "workspace:*",
+    "@tahu/core": "workspace:*",
+    "hono": "^4.5.0",
+    "@hono/zod-validator": "^0.2.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240701.0",
+    "wrangler": "^4.0.0",
+    "typescript": "^5.5.0"
+  }
+}

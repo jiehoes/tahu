@@ -1,0 +1,27 @@
+# Tahu API Worker
+name = "tahu-api"
+main = "src/index.ts"
+compatibility_date = "2024-07-01"
+
+# D1 Database
+[[d1_databases]]
+binding = "DB"
+database_name = "tahu-db"
+database_id = ""
+
+# R2 Bucket
+[[r2_buckets]]
+binding = "BUCKET"
+bucket_name = "tahu-documents"
+
+# Environment
+[vars]
+LOG_LEVEL = "debug"
+
+# Production
+[env.production]
+LOG_LEVEL = "info"
+
+[env.production.vars]
+JWT_SECRET = ""
+API_KEY = ""

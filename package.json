@@ -1,0 +1,20 @@
+{
+  "name": "tahu",
+  "private": true,
+  "description": "Tahu — Knowledge Operating System. Write once, understand forever.",
+  "scripts": {
+    "dev": "pnpm --filter tahu-api dev",
+    "build": "pnpm -r build",
+    "test": "vitest",
+    "lint": "biome check .",
+    "format": "biome format --write .",
+    "typecheck": "pnpm -r typecheck",
+    "db:generate": "pnpm --filter tahu-api db:generate",
+    "db:migrate:local": "pnpm --filter tahu-api db:migrate:local",
+    "db:migrate:remote": "pnpm --filter tahu-api db:migrate:remote"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
