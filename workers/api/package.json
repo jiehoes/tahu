@@ -15,12 +15,12 @@
   "dependencies": {
     "@tahu/api": "workspace:*",
     "@tahu/core": "workspace:*",
-    "hono": "^4.5.0",
-    "@hono/zod-validator": "^0.2.0"
+    "hono": "^4.5.0"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240701.0",
-    "wrangler": "^4.0.0",
-    "typescript": "^5.5.0"
+    "@hono/zod-validator": "^0.2.0",
+    "typescript": "^5.5.0",
+    "wrangler": "^4.0.0"
   }
 }

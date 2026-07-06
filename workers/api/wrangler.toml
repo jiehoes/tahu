@@ -7,7 +7,7 @@ compatibility_date = "2024-07-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "tahu-db"
-database_id = ""
+database_id = "dcf12a0a-a891-4304-84b4-5366f31b6764"
 
 # R2 Bucket
 [[r2_buckets]]
@@ -25,3 +25,7 @@ LOG_LEVEL = "info"
 [env.production.vars]
 JWT_SECRET = ""
 API_KEY = ""
+
+# Alias for workspace deps
+[alias]
+"@hono/zod-validator" = "../../node_modules/.pnpm/@hono+zod-validator@0.2.2_hono@4.12.27_zod@3.25.76/node_modules/@hono/zod-validator/dist/esm/index.js"
