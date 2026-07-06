@@ -152,7 +152,7 @@ API tersedia di `http://localhost:8787`.
 | [CODING_STANDARDS.md](./CODING_STANDARDS.md) | Konvensi kode |
 | [CONTRIBUTING.md](./CONTRIBUTING.md) | Setup lokal, workflow |
 | [AI_CONTEXT.md](./AI_CONTEXT.md) | Panduan untuk AI agent |
-| [AGENTS.md](./AGENTS.md) | Aturan AI agent di runtime |
+| [USAGE.md](./USAGE.md) | Panduan pemakaian — curl, alur kerja, contoh |
 
 ---
 
