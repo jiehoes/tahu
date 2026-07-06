@@ -4,6 +4,7 @@ import { logger } from 'hono/logger'
 import { documents } from './routes/documents'
 import { wiki } from './routes/wiki'
 import { agent } from './routes/agent'
+import { graph } from './routes/graph'
 import { search } from './routes/search'
 import { health } from './routes/health'
 import { auth } from './middleware/auth'
@@ -24,6 +25,7 @@ app.use('/api/v1/*', auth)
 app.route('/api/v1/documents', documents)
 app.route('/api/v1/wiki', wiki)
 app.route('/api/v1/agent', agent)
+app.route('/api/v1/graph', graph)
 app.route('/api/v1/search', search)
 
 export default app
