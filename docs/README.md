@@ -54,11 +54,11 @@ Docs  Wiki  Graph  Search
 | Package | Deskripsi |
 |---------|-----------|
 | `@tahu/core` | Shared types, utilities, error classes |
-| `@tahu/documents` | Upload, parsing, metadata extraction |
+| `@tahu/parser` | Document parsing — TXT, HTML, Markdown |
 | `@tahu/wiki` | Wiki generation, versioning, candidate pipeline |
 | `@tahu/graph` | Entity extraction, relation mapping |
-| `@tahu/search` | Full-text, semantic, hybrid search |
-| `@tahu/agent` | AI agent interface, MCP server, LLM abstraction |
+| `@tahu/agent` | AI agent interface, LLM abstraction, query |
+| `@tahu/mcp` | MCP server — 5 tools for AI agents |
 | `@tahu/api` | REST API layer (Hono) |
 
 ---
@@ -97,7 +97,7 @@ Dokumen → Parser → Metadata → Wiki Generator
 ## Quick Start
 
 ```bash
-git clone https://github.com/diffa/tahu.git
+git clone https://github.com/jiehoes/tahu.git
 cd tahu
 pnpm install
 pnpm dev
@@ -153,6 +153,7 @@ API tersedia di `http://localhost:8787`.
 | [CONTRIBUTING.md](./CONTRIBUTING.md) | Setup lokal, workflow |
 | [AI_CONTEXT.md](./AI_CONTEXT.md) | Panduan untuk AI agent |
 | [USAGE.md](./USAGE.md) | Panduan pemakaian — curl, alur kerja, contoh |
+| [AGENTS.md](./AGENTS.md) | Aturan AI agent di runtime |
 
 ---
 
