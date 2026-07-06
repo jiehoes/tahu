@@ -50,6 +50,35 @@ importers:
         specifier: ^2.0.0
         version: 2.1.9
 
+  packages/parser:
+    dependencies:
+      '@tahu/core':
+        specifier: workspace:*
+        version: link:../core
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.9
+
+  packages/wiki:
+    dependencies:
+      '@tahu/core':
+        specifier: workspace:*
+        version: link:../core
+      '@tahu/parser':
+        specifier: workspace:*
+        version: link:../parser
+    devDependencies:
+      typescript:
+        specifier: ^5.5.0
+        version: 5.9.3
+      vitest:
+        specifier: ^2.0.0
+        version: 2.1.9
+
   workers/api:
     dependencies:
       '@tahu/api':

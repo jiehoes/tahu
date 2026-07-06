@@ -30,3 +30,5 @@ API_KEY = ""
 # Alias for workspace deps
 [alias]
 "@hono/zod-validator" = "../../node_modules/.pnpm/@hono+zod-validator@0.2.2_hono@4.12.27_zod@3.25.76/node_modules/@hono/zod-validator/dist/esm/index.js"
+"@tahu/wiki" = "../../packages/wiki/src/index.ts"
+"@tahu/parser" = "../../packages/parser/src/index.ts"
