@@ -11,6 +11,9 @@ import { auth } from './middleware/auth'
 import { roleInjector } from './middleware/rbac'
 import { errorHandler } from './middleware/error-handler'
 import { analytics } from './routes/analytics'
+import { spatial } from './routes/spatial'
+import { export_ } from './routes/export'
+import { portal } from './routes/portal'
 
 const app = new Hono()
 
@@ -19,8 +22,9 @@ app.use('*', cors())
 app.use('*', logger())
 app.use('*', errorHandler)
 
-// Public routes
+// Public routes (no auth)
 app.route('/health', health)
+app.route('/portal', portal)
 
 // Protected routes
 app.use('/api/v1/*', auth)
@@ -31,5 +35,7 @@ app.route('/api/v1/agent', agent)
 app.route('/api/v1/graph', graph)
 app.route('/api/v1/search', search)
 app.route('/api/v1/analytics', analytics)
+app.route('/api/v1/spatial', spatial)
+app.route('/api/v1/export', export_)
 
 export default app
