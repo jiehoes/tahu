@@ -142,18 +142,18 @@ API tersedia di `http://localhost:8787`.
 
 | File | Isi |
 |------|-----|
-| [VISION.md](./VISION.md) | Visi, filosofi, prinsip inti |
-| [PRD.md](./PRD.md) | Product requirements, personas, NFR |
-| [ARCHITECTURE.md](./ARCHITECTURE.md) | Desain sistem, flow data |
-| [DECISIONS.md](./DECISIONS.md) | Architecture Decision Records |
-| [ROADMAP.md](./ROADMAP.md) | Fase pengembangan + dependencies |
-| [API_GUIDELINES.md](./API_GUIDELINES.md) | Standar API design |
-| [DATA_MODEL.md](./DATA_MODEL.md) | Database schema, ER diagram |
-| [CODING_STANDARDS.md](./CODING_STANDARDS.md) | Konvensi kode |
-| [CONTRIBUTING.md](./CONTRIBUTING.md) | Setup lokal, workflow |
-| [AI_CONTEXT.md](./AI_CONTEXT.md) | Panduan untuk AI agent |
-| [USAGE.md](./USAGE.md) | Panduan pemakaian — curl, alur kerja, contoh |
-| [AGENTS.md](./AGENTS.md) | Aturan AI agent di runtime |
+| [VISION.md](./docs/VISION.md) | Visi, filosofi, prinsip inti |
+| [PRD.md](./docs/PRD.md) | Product requirements, personas, NFR |
+| [ARCHITECTURE.md](./docs/ARCHITECTURE.md) | Desain sistem, flow data |
+| [DECISIONS.md](./docs/DECISIONS.md) | Architecture Decision Records |
+| [ROADMAP.md](./docs/ROADMAP.md) | Fase pengembangan + dependencies |
+| [API_GUIDELINES.md](./docs/API_GUIDELINES.md) | Standar API design |
+| [DATA_MODEL.md](./docs/DATA_MODEL.md) | Database schema, ER diagram |
+| [CODING_STANDARDS.md](./docs/CODING_STANDARDS.md) | Konvensi kode |
+| [CONTRIBUTING.md](./docs/CONTRIBUTING.md) | Setup lokal, workflow |
+| [AI_CONTEXT.md](./docs/AI_CONTEXT.md) | Panduan untuk AI agent |
+| [USAGE.md](./docs/USAGE.md) | Panduan pemakaian — curl, alur kerja, contoh |
+| [AGENTS.md](./docs/AGENTS.md) | Aturan AI agent di runtime |
 
 ---
 
