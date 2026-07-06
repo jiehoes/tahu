@@ -158,9 +158,18 @@ API tersedia di `http://localhost:8787`.
 
 ## Status
 
-🟡 **Phase 1 — Foundation** (in planning)
+✅ **All 6 Phases Complete**
 
-Lihat [ROADMAP.md](./ROADMAP.md) untuk detail.
+| Phase | Status |
+|-------|--------|
+| Phase 1 — Foundation | ✅ Monorepo, API, Auth, Upload, Search, CI/CD |
+| Phase 2 — Knowledge | ✅ Parser, Wiki Engine, Versioning, Candidates |
+| Phase 3 — AI | ✅ LLM, Agent Query, MCP, Summarization |
+| Phase 4 — Graph | ✅ Entities, Relations, Visualization |
+| Phase 5 — Enterprise | ✅ RBAC, Audit, Multi-tenant, Analytics |
+| Phase 6 — Knowledge OS | ✅ Workflow, Spatial, Export, Public Portal |
+
+**Live**: https://api.tahu.diffa.net
 
 ---
 
