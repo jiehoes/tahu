@@ -97,7 +97,7 @@ Dokumen → Parser → Metadata → Wiki Generator
 ## Quick Start
 
 ```bash
-git clone https://github.com/diffa/tahu.git
+git clone https://github.com/jiehoes/tahu.git
 cd tahu
 pnpm install
 pnpm dev
