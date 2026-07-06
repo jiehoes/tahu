@@ -215,7 +215,7 @@ curl -X POST \
 curl -X POST \
   -H "X-API-Key: $TAHU_KEY" \
   -H "Content-Type: application/json" \
-  -d '{"reviewerId":"admin","notes":"Data valid"}'
+  -d '{"reviewerId":"admin","notes":"Data valid"}' \
   https://api.tahu.diffa.net/api/v1/wiki/candidates/cand_001/approve
 ```
 
