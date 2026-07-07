@@ -1,0 +1,16 @@
+[
+  {
+    "projectId": "75b85de3-2770-44c4-90c0-7c1cdc078d94",
+    "testId": "5e84b745-50d2-40a1-8f99-99d9407c3492",
+    "userId": "04a8b418-90a1-70cc-d5fa-306ee6e803a8",
+    "title": "TC001-upload_document",
+    "description": "Verify that the POST /api/v1/documents endpoint successfully uploads a document with valid API key authentication and returns the appropriate response.",
+    "code": "import requests\n\ndef test_upload_document():\n    base_url = \"http://localhost:8788\"\n    url = f\"{base_url}/api/v1/documents\"\n    headers = {\n        \"X-API-Key\": \"tahu-dev-key-2026\"\n    }\n    files = {\n        \"file\": (\"test.txt\", b\"Sample file content\", \"text/plain\")\n    }\n    data = {\n        \"title\": \"Test Document\"\n    }\n    try:\n        response = requests.post(url, headers=headers, files=files, data=data, timeout=30)\n        assert response.status_code == 201, f\"Expected status code 201 but got {response.status_code}\"\n        resp_json = response.json()\n        assert resp_json.get(\"success\") is True, \"Response success flag is not True\"\n        data_field = resp_json.get(\"data\", {})\n        assert \"id\" in data_field and data_field[\"id\"], \"Response JSON missing 'id' inside 'data'\"\n        assert data_field.get(\"title\") == \"Test Document\", f\"Document title mismatch, expected 'Test Document' got {data_field.get('title')}\"\n        assert data_field.get(\"mimeType\") == \"text/plain\", f\"Document mimeType mismatch, expected 'text/plain' got {data_field.get('mimeType')}\"\n    except requests.RequestException as e:\n        assert False, f\"Request failed: {e}\"\n\ntest_upload_document()",
+    "testStatus": "PASSED",
+    "testError": "",
+    "testType": "BACKEND",
+    "createFrom": "mcp",
+    "created": "2026-07-06T07:04:19.630Z",
+    "modified": "2026-07-06T07:04:25.601Z"
+  }
+]

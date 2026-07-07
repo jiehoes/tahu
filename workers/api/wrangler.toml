@@ -18,6 +18,8 @@ bucket_name = "tahu-documents"
 # Environment
 [vars]
 LOG_LEVEL = "debug"
+API_KEY = "tahu-dev-key-2026"
+JWT_SECRET = "dev-secret-do-not-use-in-prod"
 
 # Production
 [env.production]

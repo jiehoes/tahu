@@ -1,0 +1,78 @@
+{
+  "productName": "Tahu Knowledge OS",
+  "vision": "Membangun Knowledge Operating System yang dapat mengubah seluruh dokumen organisasi menjadi Living Knowledge Base. Chat hanyalah salah satu antarmuka. Knowledge adalah aset utama.",
+  "goals": [
+    "Document Management",
+    "Knowledge Extraction",
+    "Wiki Generation",
+    "Knowledge Graph",
+    "Semantic Search",
+    "AI Agent Integration",
+    "MCP Integration",
+    "API Integration"
+  ],
+  "coreModules": [
+    "Document Manager",
+    "Metadata Engine",
+    "Parser Engine",
+    "Wiki Generator",
+    "Knowledge Graph",
+    "Search Engine",
+    "AI Agent Interface",
+    "Knowledge Update Engine",
+    "Integration Layer"
+  ],
+  "userPersonas": [
+    {
+      "name": "Admin / Knowledge Manager",
+      "actions": ["Upload dokumen massal", "Kategorisasi dan tag dokumen", "Review dan approve Knowledge Candidate", "Manage user access dan roles"]
+    },
+    {
+      "name": "Developer / Integrator",
+      "actions": ["Akses Knowledge API", "Integrasi ke aplikasi eksternal", "Setup MCP server untuk AI agent", "Custom search query"]
+    },
+    {
+      "name": "End User",
+      "actions": ["Search knowledge", "Baca Wiki article", "Tanya via chatbot"]
+    },
+    {
+      "name": "AI Agent",
+      "actions": ["Query knowledge via MCP/REST", "Generate summary dan report", "Search semantic + graph"]
+    }
+  ],
+  "apiEndpoints": [
+    {"method": "POST", "path": "/api/v1/documents", "description": "Upload document"},
+    {"method": "GET", "path": "/api/v1/documents", "description": "List documents"},
+    {"method": "GET", "path": "/api/v1/documents/:id", "description": "Get document"},
+    {"method": "DELETE", "path": "/api/v1/documents/:id", "description": "Delete document"},
+    {"method": "POST", "path": "/api/v1/wiki/generate", "description": "Generate wiki from document"},
+    {"method": "GET", "path": "/api/v1/wiki", "description": "List wiki articles"},
+    {"method": "GET", "path": "/api/v1/wiki/:id", "description": "Get wiki article"},
+    {"method": "GET", "path": "/api/v1/wiki/:id/versions", "description": "List wiki versions"},
+    {"method": "POST", "path": "/api/v1/wiki/:id/candidates", "description": "Submit knowledge candidate"},
+    {"method": "POST", "path": "/api/v1/wiki/candidates/:id/approve", "description": "Approve candidate"},
+    {"method": "POST", "path": "/api/v1/agent/query", "description": "AI-powered knowledge query"},
+    {"method": "POST", "path": "/api/v1/agent/summarize", "description": "Summarize articles"},
+    {"method": "POST", "path": "/api/v1/agent/tags", "description": "AI auto-tagging"},
+    {"method": "POST", "path": "/api/v1/search", "description": "Full-text search"},
+    {"method": "POST", "path": "/api/v1/graph/extract", "description": "Extract entities from wiki"},
+    {"method": "GET", "path": "/api/v1/graph/entities", "description": "List entities"},
+    {"method": "GET", "path": "/api/v1/graph/visualization", "description": "Graph visualization data"},
+    {"method": "GET", "path": "/api/v1/analytics/overview", "description": "Analytics dashboard"},
+    {"method": "GET", "path": "/portal/wiki", "description": "Public wiki portal"},
+    {"method": "GET", "path": "/health", "description": "Health check"}
+  ],
+  "authentication": {
+    "type": "apiKey",
+    "headerName": "X-API-Key",
+    "headerValue": "tahu-dev-key-2026"
+  },
+  "nonFunctionalRequirements": {
+    "performance": {
+      "apiResponseP95": "< 200ms",
+      "searchResponseP95": "< 500ms",
+      "uptime": "99.9%"
+    },
+    "security": ["API Key authentication", "RBAC", "Input validation", "Prepared statements"]
+  }
+}

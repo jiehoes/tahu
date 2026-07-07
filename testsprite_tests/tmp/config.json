@@ -1,0 +1,22 @@
+{
+  "status": "commited",
+  "type": "backend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:8788",
+  "backendAuthType": "API key",
+  "backendApiKey": "X-API-Key",
+  "backendApiValue": "tahu-dev-key-2026",
+  "executionArgs": {
+    "projectName": "tahu",
+    "projectPath": "D:\\2026\\tahu",
+    "testIds": [
+      "TC001"
+    ],
+    "additionalInstruction": "The API wraps all responses in {success: true, data: {...}}. So for POST /api/v1/documents, the response body is: {\"success\":true,\"data\":{\"id\":\"...\",\"title\":\"...\",\"category\":null,\"status\":\"processing\",\"fileSize\":123,\"mimeType\":\"text/plain\",\"storageKey\":\"...\",\"tags\":[],\"createdAt\":\"...\",\"updatedAt\":\"...\"}}. The 'id' field is inside 'data', not at top level. Assert on response.json()[\"data\"][\"id\"]. Expected status code is 201.",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-3UILWVp0jAk8WmrxFVKd_1NkvoNCM8yui4nQG5vtiddoT7LPywGe0aZ8MGv21ZZlJbDUvsjcb4CCa-Gt8_oyJQZu1YjwLvbL6oPFgojPVBi-pX7_GLwz6oG27Gx3ciZoVak"
+    }
+  },
+  "serverPort": 49844
+}
